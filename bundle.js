@@ -1,0 +1,1 @@
+console.error("SyntaxError: /Users/apprentice/bug_catcher/index.js: Unexpected token (31:10) while parsing file: /Users/apprentice/bug_catcher/index.js");
