@@ -14,25 +14,31 @@ class App extends Component {
 		super(props)
 		this.addBug = this.addBug.bind(this)
 		this.state = {
-			bugs: [] 
+			bugs: ["thing", "other thing"]
 		}
 	}
 
 	addBug (bug) {
-		const caughtBugs =this.state.bugs
-		caughtBugs.push(bug)
+		console.log("this is the bug", bug)
+		console.log("here's what I think this is:", this)
+
+
+		const caughtBugs = this.state.bugs
+
+		console.log("here's the new bugs state", [...caughtBugs, bug])
+
 		this.setState({
-			bugs: caughtBugs
+			bugs: [...caughtBugs, bug]
 		})
-		console.log('caught bugs!', this.state.caughtBugs)
+		console.log('caught bugs!', this.state.bugs)
 	}
 
 
 	render() {
 		return (
 			<div>
-				<Title name={this.props.name} />
-				<BugForm addBug={this.addBug}/>
+				<Title name={this.props.name} saying={this.props.saying} />
+				<BugForm addBug={this.addBug.bind(this)}/>
 				<BugChecklist bugs={this.state.bugs}/>
 			</div>
 		)

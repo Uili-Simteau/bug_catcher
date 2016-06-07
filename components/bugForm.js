@@ -10,12 +10,18 @@ class BugForm extends Component {
 		super(props)
 	}
 
+	submitBug(event) {
+		// read the form, find the value in it
+		// use addBug to submit that value
+		this.props.addBug('dog')
+	}
+
 	render () {
 		return (
 			<div>
-		 	  <form>{this.props.name}
-		 	  	<input id='bugInput' placeholder="What's your bug?"></input><button id="bugButton" type="submit" >Submit Bug</button>
-		 	  </form>
+	 	  	<input id='bugInput' placeholder="What's your bug?"></input>
+	 	  	<button id="bugButton" type="submit" onClick={this.submitBug.bind(this)}>Submit Bug</button>
+
 		 	</div>
 		)
 	}
