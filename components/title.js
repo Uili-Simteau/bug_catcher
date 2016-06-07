@@ -22,7 +22,7 @@ class Title extends Component {
 		return (
 			<div
 			onClick={this.toggleClickedState.bind(this)}
-			style={ this.state.clicked ? {'fontSize': '100px'} : {'color': 'red', 'fontSize': '50px'} }
+			style={ this.state.clicked ? {'fontSize': '40pt'} : {'color': 'red', 'fontSize': '50px'} }
 		  >
 		 	  <h1>Welcome to {this.props.name}</h1>
 		 	  <h2>{this.props.saying}</h2>

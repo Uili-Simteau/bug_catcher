@@ -13,7 +13,7 @@ class BugForm extends Component {
 	submitBug(event) {
 		// read the form, find the value in it
 		// use addBug to submit that value
-		this.props.addBug('dog')
+		this.props.addBug('cat')
 	}
 
 	render () {

@@ -16,10 +16,14 @@ class BugChecklist extends Component{
 		return (
 			<div>
 				<ul>
-					{ bugs.map( (singleBug) => { 
-						  return <Bug bug={singleBug} /> 
-					  }) 
-				  }
+					{ bugs.map( (singleBug, i) => { 
+						  return (
+						  	<div>
+							  	<input type="checkbox" id="checkbox" value="#"/> 
+							  	<Bug bug={singleBug} index={ i } />
+							  </div> 
+					  	)} 
+				  )}
 				</ul>
 			</div>
 			)
