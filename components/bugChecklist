@@ -1,0 +1,23 @@
+import React, { Component } from 'reeact'
+import reactDom from 'reactDom'
+
+import Bug from 
+
+class BugChecklist extends COmponent{
+	constructor(props) {
+		super(props)
+		this
+	}
+
+	render () {
+		return (
+			<div>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+			)
+	}
+}
+
+export default BugChecklist
