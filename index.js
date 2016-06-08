@@ -49,6 +49,6 @@ class App extends Component {
 const appendStuff = document.getElementById('App')
 
 reactDom.render(
-	<App name="Bug Catcher" saying="Catch those Bugs!" />,
+	<App name="DevBug Catcher" saying="Catch those DevBugs!" />,
 	appendStuff
 )
