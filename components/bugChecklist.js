@@ -20,6 +20,7 @@ class BugChecklist extends Component{
 						  return (
 						  	<div>
 							  	<input type="checkbox" id="checkbox" value="#"/><Bug bug={singleBug} index={ i } />
+							  	<input id='solution' ref='solution' type="text" placeholder="Solution?"></input>
 							  </div> 
 					  	)} 
 				  )}

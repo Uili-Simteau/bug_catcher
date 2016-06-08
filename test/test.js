@@ -1,5 +1,6 @@
 console.log("testing here")
-import test from 'mocha';
+import { beforeEach, describe, it } from 'mocha';
+import [ expect ] from 'chai'
 import React from 'react';
 import { mount, shalow } from 'enzyme';
 
