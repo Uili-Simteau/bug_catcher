@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "watchify index.js -o bundle.js -dv",
-    "test": "test/test.js"
+    "test": " mocha test/test.js"
   },
   "browserify": {
     "transform": [

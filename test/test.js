@@ -1,18 +1,23 @@
-import test from 'mocha'
-import Reeact from 'react'
-import { mount, shalow } from 'enzyme'
+console.log("testing here")
+import test from 'mocha';
+import React from 'react';
+import { mount, shalow } from 'enzyme';
 
-import Title from '../components/title.js'
-import BugForm from '../components/bugForm.js'
-import BugChecklist from '../components/bugChecklist.js'
-import Bug from '../components/bug.js' 
+import Title from '../components/title.js';
+import BugForm from '../components/bugForm.js';
+import BugChecklist from '../components/bugChecklist.js';
+import Bug from '../components/bug.js';
 
 
 describe('Text appears on list', ( => {
 
-	it('looks for list component', () => {
-		const wrapper = mount (<BugChecklist />);
+	it('renders the checklist component', () => {
+		const wrapper = shallow (<BugChecklist />);
 		expect(BugChecklist.portotype.componentDidMount.calledOnce).to.equal(true);
-	})
+	});
+
+	it('reads BugChecklist text', () => {
+		const wrapper
+	}))
 }));
 
