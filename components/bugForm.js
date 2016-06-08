@@ -10,7 +10,6 @@ class BugForm extends Component {
 		super(props)
 		
 	}
-	
 
 	submitBug(event) {
 		// var bugText = document.getElementById("bugInput").value

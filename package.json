@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "watchify index.js -o bundle.js -dv",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test/test.js"
   },
   "browserify": {
     "transform": [
@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/Uili-Simteau/bug_catcher#readme",
   "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
     "pug": "^0.1.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
