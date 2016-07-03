@@ -1,0 +1,37 @@
+{
+  "name": "bug_catcher",
+  "version": "1.0.0",
+  "description": "Catch all your bugs, become a better Dev",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "watchify index.js -o bundle.js -dv",
+    "test": " mocha test/test.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uili-Simteau/bug_catcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uili-Simteau/bug_catcher/issues"
+  },
+  "homepage": "https://github.com/Uili-Simteau/bug_catcher#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "pug": "^0.1.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "enzyme": "^2.3.0"
+  }
+}
