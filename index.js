@@ -14,7 +14,8 @@ class App extends Component {
         super(props)
         this.addBug = this.addBug.bind(this)
         this.state = {
-            bugs: ["thing", "other thing"]
+            bugs: ["comma", "bracket"],
+            solutions: []
         }
     },
 
@@ -30,6 +31,20 @@ class App extends Component {
             bugs: [...caughtBugs, bug]
         })
         console.log('caught bugs!', this.state.bugs)
+    },
+
+    addSolution (solution) {
+        console.log("this is the solution", solution)
+        console.log("here's what I think this is:", this)
+
+        const caughtSolutions = this.state.solutions
+
+        console.log("here's the new bugs state", [...caughtSolutions, solution])
+
+        this.setState({
+            solutions: [...caughtSolutions, solution]
+        })
+        console.log('caught bugs!', this.state.solution)
     },
 
 
