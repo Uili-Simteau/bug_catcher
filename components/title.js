@@ -5,31 +5,29 @@ import reactDom from 'react-dom'
 
 
 class Title extends Component {
-	constructor(props) {
-		super(props)
+    constructor(props) {
+        super(props)
 
-		this.state = {
-			clicked: false
-		}
-	}
+        this.state = {
+          clicked: false
+        }
+    }
 
-  toggleClickedState() {
-	  this.setState({clicked: !this.state.clicked})
-	  console.log(this.state)
-	}
+    toggleClickedState() {
+        this.setState({clicked: !this.state.clicked})
+        console.log(this.state)
+    },
 
-	render () {
-		return (
-			<div
-			onClick={this.toggleClickedState.bind(this)}
-			style={ this.state.clicked ? {'fontSize': '200pt'} : {'color': 'blue', 'fontSize': '50px'} }
-		  >
-		 	  <h1>Welcome to {this.props.name}</h1>
-		 	  <h2>{this.props.saying}</h2>
-
-		 	</div>
-		)
-	}
+    render () {
+        return (
+            <div
+            onClick={this.toggleClickedState.bind(this)}
+            style={ this.state.clicked ? {'fontSize': '200pt'} : {'color': 'black', 'fontSize': '30px'} }>
+                <h1>Welcome to {this.props.name}</h1>
+                <h2>{this.props.saying}</h2>
+            </div>
+        )
+    }
 }
 
 export default Title
