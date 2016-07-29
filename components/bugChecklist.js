@@ -7,7 +7,15 @@ class BugChecklist extends Component{
     constructor(props) {
         super(props)
         console.log("bugs BugChecklist got from App", this.props.bugs)
-      },
+      }
+
+    submitSolution(event) {
+        var input = this.refs.solutionInput
+        var value = input.value
+        input.value = ''
+
+        this.props.addSolution(value)
+    }
 
     render () {
         const bugs = this.props.bugs
@@ -18,7 +26,7 @@ class BugChecklist extends Component{
                       return (
                           <div>
                               <input  id="checkbox" value="#"/><Bug class="singleBug" bug={singleBug} index={ i } />
-                              <input id='solution' ref='solution' type="text" placeholder="Solution?"></input>
+                              <input id="solution" ref="solution" type="text" placeholder="Solution?"></input>
                               <button id="solutionButton" type="submit" onClick={this.submitSolution.bind(this)}>Submit solution</button>
                           </div>
                       )
