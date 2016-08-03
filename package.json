@@ -24,11 +24,13 @@
   },
   "homepage": "https://github.com/Uili-Simteau/bug_catcher#readme",
   "dependencies": {
+    "babelify": "^7.3.0",
     "chai": "^3.5.0",
     "mocha": "^2.5.3",
     "pug": "^0.1.0",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "watchify": "^3.7.0"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.9.0",
