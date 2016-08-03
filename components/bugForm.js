@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react'
+import React { Component } from 'react'
 import reactDom from 'react-dom'
 import Bug from './bug.js'
 
@@ -8,7 +8,7 @@ import Bug from './bug.js'
 class BugForm extends Component {
 	constructor(props) {
 		super(props)
-		
+
 	}
 
 	submitBug(event) {
