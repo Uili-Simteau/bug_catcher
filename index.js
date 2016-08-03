@@ -6,6 +6,7 @@ import Title from './components/title.js'
 import BugForm from './components/bugForm.js'
 import BugChecklist from './components/bugChecklist.js'
 import Bug from './components/bug.js'
+import Solution from './components/solution.js'
 
 
 
@@ -19,6 +20,7 @@ class App extends Component {
             solutions: []
         }
     }
+
     addBug (bug) {
         console.log("this is the bug", bug)
         console.log("here's what I think this is:", this)
@@ -32,6 +34,7 @@ class App extends Component {
         })
         console.log('caught bugs!', this.state.bugs)
     }
+
     addSolution (solution) {
         console.log("this is the solution", solution)
         console.log("here's what I think this is:", this)

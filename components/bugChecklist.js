@@ -20,6 +20,7 @@ class BugChecklist extends Component{
 
     render () {
         const bugs = this.props.bugs
+        const solutions = this.props.solutions
         return (
             <div>
                 <ul>
@@ -27,12 +28,19 @@ class BugChecklist extends Component{
                         return (
                             <div>
                                 <Bug class="singleBug" bug={singleBug} index={ i } />
+                            </div>
+                        )
+                    })}
+                    { solutions.map( (singleSolution, i) => {
+                        return (
+                            <div>
                                 <Solution class="singleBug" solution={singleSolution} index={ i } />
                                 <input id="solution" ref="solution" type="text" placeholder="No Solution?"></input>
                                 <button id="solutionButton" type="submit" onClick={this.submitSolution.bind(this)}>Submit solution</button>
                             </div>
                         )
                     })}
+
                 </ul>
             </div>
         )
