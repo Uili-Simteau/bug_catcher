@@ -2,7 +2,7 @@ console.log("testing here")
 import { beforeEach, describe, it } from 'mocha';
 import [ expect ] from 'chai'
 import React from 'react';
-import { mount, shalow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 
 import Title from '../components/title.js';
 import BugForm from '../components/bugForm.js';
@@ -21,4 +21,3 @@ describe('Text appears on list', ( => {
 		const wrapper
 	}))
 }));
-
