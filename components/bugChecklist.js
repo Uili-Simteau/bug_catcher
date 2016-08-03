@@ -30,7 +30,7 @@ class BugChecklist extends Component{
                                 </span>
                                 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
                             <!-- LikeBtn.com END -->
-                                <input id="solution" ref="solution" type="text" placeholder="Solution?"></input>
+                                <input id="solution" ref="solution" type="text" placeholder="No Solution?"></input>
                                 <button id="solutionButton" type="submit" onClick={this.submitSolution.bind(this)}>Submit solution</button>
                             </div>
                         )
