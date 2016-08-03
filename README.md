@@ -1,3 +1,4 @@
+
 #Dev Bug Catcher
 ###*Catch all your bugs, become a better Dev.*
 
@@ -16,4 +17,3 @@ The user can:
 5. Search for a bug.
 6. Up-count a bug if it is repeated.
 2. Log a solution against a bug.
-4.
