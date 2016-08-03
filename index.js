@@ -13,6 +13,7 @@ class App extends Component {
     constructor(props){
         super(props)
         this.addBug = this.addBug.bind(this)
+        this.addSolution = this.addSolution.bind(this)
         this.state = {
             bugs: ["comma", "bracket"],
             solutions: []
