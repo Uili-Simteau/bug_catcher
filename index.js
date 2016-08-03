@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react'
+import React { Component } from 'react'
 import reactDom from 'react-dom'
 
 import Title from './components/title.js'
