@@ -8,7 +8,7 @@ import Bug from './bug.js'
 class BugForm extends Component {
 	constructor(props) {
 		super(props)
-		
+
 	}
 
 	submitBug(event) {

@@ -1,23 +1,25 @@
 
-import React, { Component } from 'react'
 import reactDom from 'react-dom'
+import React, { Component } from 'react'
 
 import Title from './components/title.js'
 import BugForm from './components/bugForm.js'
 import BugChecklist from './components/bugChecklist.js'
 import Bug from './components/bug.js'
+import Solution from './components/solution.js'
 
 
 
 class App extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.addBug = this.addBug.bind(this)
+        this.addSolution = this.addSolution.bind(this)
         this.state = {
             bugs: ["comma", "bracket"],
             solutions: []
         }
-    },
+    }
 
     addBug (bug) {
         console.log("this is the bug", bug)
@@ -31,7 +33,7 @@ class App extends Component {
             bugs: [...caughtBugs, bug]
         })
         console.log('caught bugs!', this.state.bugs)
-    },
+    }
 
     addSolution (solution) {
         console.log("this is the solution", solution)
@@ -45,9 +47,7 @@ class App extends Component {
             solutions: [...caughtSolutions, solution]
         })
         console.log('caught bugs!', this.state.solution)
-    },
-
-
+    }
     render() {
         return (
             <div>
@@ -63,6 +63,6 @@ class App extends Component {
 const appendStuff = document.getElementById('App')
 
 reactDom.render(
-    <App name="DevBug Catcher" saying="Catch those DevBugs!" />,
+    <App name="DevBug Catcher" saying="Catch those Bugs!" />,
     appendStuff
 )

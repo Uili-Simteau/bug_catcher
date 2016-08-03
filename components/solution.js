@@ -1,15 +1,14 @@
-
 import React, { Component } from 'react'
 import reactDom from 'react-dom'
 
-class Bug extends Component {
+class Solution extends Component {
 
 	render() {
 
 		return (
-			<li>{this.props.bug}</li>
+			<li>{this.props.solution}</li>
 		)
 	}
 }
 
-export default Bug
+export default Solution
