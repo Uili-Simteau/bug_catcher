@@ -1,6 +1,6 @@
 
-import React { Component } from 'react'
 import reactDom from 'react-dom'
+import React, { Component } from 'react'
 
 import Title from './components/title.js'
 import BugForm from './components/bugForm.js'
@@ -10,7 +10,7 @@ import Bug from './components/bug.js'
 
 
 class App extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.addBug = this.addBug.bind(this)
         this.addSolution = this.addSolution.bind(this)
@@ -18,8 +18,7 @@ class App extends Component {
             bugs: ["comma", "bracket"],
             solutions: []
         }
-    },
-
+    }
     addBug (bug) {
         console.log("this is the bug", bug)
         console.log("here's what I think this is:", this)
@@ -32,8 +31,7 @@ class App extends Component {
             bugs: [...caughtBugs, bug]
         })
         console.log('caught bugs!', this.state.bugs)
-    },
-
+    }
     addSolution (solution) {
         console.log("this is the solution", solution)
         console.log("here's what I think this is:", this)
@@ -46,9 +44,7 @@ class App extends Component {
             solutions: [...caughtSolutions, solution]
         })
         console.log('caught bugs!', this.state.solution)
-    },
-
-
+    }
     render() {
         return (
             <div>

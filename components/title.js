@@ -1,5 +1,5 @@
 
-import React { Component } from 'react'
+import React, { Component } from 'react'
 import reactDom from 'react-dom'
 
 
@@ -16,7 +16,7 @@ class Title extends Component {
     toggleClickedState() {
         this.setState({clicked: !this.state.clicked})
         console.log(this.state)
-    },
+    }
 
     render () {
         return (
