@@ -48,6 +48,7 @@ class App extends Component {
         })
         console.log('caught bugs!', this.state.solution)
     }
+    
     render() {
         return (
             <div>
