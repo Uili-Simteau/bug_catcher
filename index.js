@@ -7,7 +7,7 @@ import BugForm from './components/bugForm.js'
 import BugChecklist from './components/bugChecklist.js'
 import Bug from './components/bug.js'
 import Solution from './components/solution.js'
-
+import Advice from './components/advice.js'
 
 
 class App extends Component {
@@ -48,13 +48,14 @@ class App extends Component {
         })
         console.log('caught bugs!', this.state.solution)
     }
-    
+
     render() {
         return (
             <div>
                 <Title name={this.props.name} saying={this.props.saying} />
-                <BugForm addBug={this.addBug.bind(this)}/>
-                <BugChecklist bugs={this.state.bugs} solutions={this.state.solutions}/>
+                <BugForm addBug={this.addBug.bind(this)} />
+                <BugChecklist bugs={this.state.bugs} solutions={this.state.solutions} />
+                <Advice advice={this.props.advice} />
             </div>
         )
     }
