@@ -6,6 +6,8 @@
 .checklist{
   text-decoration: none;
   background-color: green;
+  display: flex;
+  justify-content: center;
 }
 
 #checklistUl{
