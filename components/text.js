@@ -11,7 +11,7 @@ class Text extends Component {
               <p>
                 <h1>Debugging</h1>
                 <h2>strategies when stuff breaks :</h2>
-                <ul style={{text-dectoration: none}}>
+                <ul>
                   <li>read the error</li>
                   <li>console.log</li>
                   <li>add a bunch with strings</li>
