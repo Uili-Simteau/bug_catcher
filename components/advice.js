@@ -12,7 +12,7 @@ class Advice extends Component{
     render () {
         return (
             <div>
-                <Text class="adviceText" />
+                <Text className="adviceText" />
             </div>
         )
     }
