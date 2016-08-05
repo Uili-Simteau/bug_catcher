@@ -3,9 +3,7 @@
 	text-decoration: none;
 }
 
-li{
+.checklist{
   text-decoration: none;
-}
-#text{
-  text-decoration: none;
+  background-color: green;
 }
