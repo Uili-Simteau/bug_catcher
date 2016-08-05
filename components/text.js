@@ -7,11 +7,11 @@ class Text extends Component {
 
         return (
             // <li>{this.props.text}</li>
-            <div>
+            <div id="text">
               <p>
                 <h1>Debugging</h1>
                 <h2>strategies when stuff breaks :</h2>
-                <ul>
+                <ul style={{text-dectoration: none}}>
                   <li>read the error</li>
                   <li>console.log</li>
                   <li>add a bunch with strings</li>
