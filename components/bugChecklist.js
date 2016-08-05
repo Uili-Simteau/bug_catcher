@@ -22,7 +22,7 @@ class BugChecklist extends Component{
         const solutions = this.props.solutions
         return (
             <div>
-                <ul>
+                <ul id="checklistUl">
                     { bugs.map( (singleBug, i) => {
                         return (
                             <div className="checklist">
