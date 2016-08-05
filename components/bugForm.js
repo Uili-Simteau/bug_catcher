@@ -4,7 +4,6 @@ import reactDom from 'react-dom'
 import Bug from './bug.js'
 
 
-
 class BugForm extends Component {
     constructor(props) {
         super(props)
