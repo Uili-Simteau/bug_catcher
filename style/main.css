@@ -13,3 +13,8 @@
   text-decoration: none;
   background-color: green;
 }
+
+h1 h2{
+  display: flex;
+  justify-content: center;
+}
