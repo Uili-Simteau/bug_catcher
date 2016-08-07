@@ -26,6 +26,7 @@ class BugChecklist extends Component{
                     { bugs.map( (singleBug, i) => {
                         return (
                             <div className="checklist">
+                            <label for="bugCount">How often bug cought : </label><input id="bugCount" type="number" value="0"/>
                                 <Bug className="singleBug" bug={singleBug} index={ i } />
                                 {/* <Solution className="singleBug" solution={singleSolution} index={ i } /> */}
                                 <input id="solutionInput" ref="solutionInput" type="text" placeholder="No Solution?"></input>
