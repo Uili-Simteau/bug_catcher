@@ -22,23 +22,20 @@ class BugChecklist extends Component{
         const solutions = this.props.solutions
         return (
             <div>
-                <ul id="checklistUl">
+                <form id="checklistUl">
                     { bugs.map( (singleBug, i) => {
                         return (
                             <div className="checklist">
-                                <form>
                                     <label for="bugCount">Frequency: </label><input id="bugCount" type="number" rows="1" cols="1"/>
                                     <Bug className="singleBug" bug={singleBug} index={ i } />
                                     <label for="solutionInput">Solution: </label>
                                     <textarea rows="4" cols="50" placeholder="Solution?">
                                     </textarea>
                                     <hr />
-                                </form>
                             </div>
                         )
                     })}
-
-                </ul>
+                </form>
             </div>
         )
     }

@@ -10,34 +10,33 @@ class Text extends Component {
           <div className="debugging">
             <h1>Debugging</h1>
             <h2>strategies when stuff breaks :</h2>
-              <ul>
-                <li>read the error</li>
-                <li>console.log</li>
-                <li>add a bunch with strings</li>
-                <li>"what did you expect, what did you get, how do you know you got that"</li>
-                <li>put in comments to confirm where you've reached in the code</li>
-                <li>configuration env which helps you debug: e.g. watchify .... --dv</li>
-                <li>read your tooling docs for sweet trick, talk with friends</li>
-                <li>write down your error messages</li>
-                <li>helps you when you see it again</li>
-                <li>fix your indentation</li>
-                <li>google</li>
-                <li>collect keywords</li>
-                <li>iterate</li>
-                <li>"rubber ducking"</li>
-                <li>talking someone through your thinking reveals assumptions</li>
-                <li>timeboxing</li>
-                <li>walk away / give it some time</li>
-                <li>get some fresh eyes on a thing</li>
-                <li>reinstall your node_modules</li>
-                <li>try something / break it some more</li>
-                <li>keep deleting code until something works</li>
-                <li>whittle back till you're solving one problem</li>
-                <li>add things in slowly</li>
-                <li>save points when code is working</li>
-                <li>git checkout . - you can wipe away all changes since the last commit (doesn't include new files)</li>
-                <li>pull from master after every commit</li>
-              </ul>
+              <div>
+                <h3>Read the error</h3>
+                <h3>console.log</h3>
+                <p>Add a bunch with strings</p>
+                <h3>"what did you expect, what did you get, how do you know you got that"</h3>
+                <h3>Put in comments to confirm where you've reached in the code</h3>
+                <h3>Configuration env which helps you debug: e.g. watchify .... --dv</h3>
+                <h3>Read your tooling docs for sweet trick, talk with friends</h3>
+                <h3>Write down your error messages, helps you when you see it again</h3>
+                <h3>Fix your indentation</h3>
+                <h3>Google</h3>
+                <h3>Collect keywords</h3>
+                <h3>Iterate</h3>
+                <h3>"Rubber ducking"</h3>
+                <h3>Talking someone through your thinking reveals assumptions</h3>
+                <h3>Timeboxing</h3>
+                <h3>Walk away / give it some time</h3>
+                <h3>Get some fresh eyes on a thing</h3>
+                <h3>Reinstall your node_modules</h3>
+                <h3>Try something / break it some more</h3>
+                <h3>Keep deleting code until something works</h3>
+                <h3>Whittle back till you're solving ONE problem</h3>
+                <h3>Add things in slowly</h3>
+                <h3>Save points when code is working</h3>
+                <h3>Git checkout . - you can wipe away all changes since the last commit (doesn't include new files)</h3>
+                <h3>Pull from master after every commit</h3>
+              </div>
           </div>
         )
     }

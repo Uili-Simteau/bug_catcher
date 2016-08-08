@@ -9,7 +9,7 @@ class Bug extends Component {
 
 		return (
       <div>
-        <li>{this.props.bug}</li>
+        <p>{this.props.bug}</p>
       </div>
 		)
 	}

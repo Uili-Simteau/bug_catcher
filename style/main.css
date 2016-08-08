@@ -9,11 +9,8 @@
   justify-content: center;
 }
 
-#checklistUl{
-  text-decoration: none;
-}
 
-h1, h2, #bugForm, .checklist{
+h1, h2, h3, p, #bugForm, .checklist{
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
@@ -26,4 +23,6 @@ li{
 .debugging{
   display: flex;
   justify-content: center;
+  background-color: #d0cece;
+  flex-direction: column;
 }
