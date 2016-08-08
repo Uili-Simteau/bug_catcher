@@ -3,7 +3,7 @@
 	text-decoration: none;
 }
 
-.checklist{
+{
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -11,10 +11,19 @@
 
 #checklistUl{
   text-decoration: none;
-  background-color: green;
 }
 
-h1 h2{
+h1, h2, #bugForm, .checklist{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+li{
+    text-decoration-color: none;
+}
+
+.debugging{
   display: flex;
   justify-content: center;
 }

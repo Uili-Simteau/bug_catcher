@@ -20,7 +20,7 @@ class BugForm extends Component {
 
     render () {
         return (
-            <div>
+            <div id='bugForm'>
                 <input id='bugInput' ref='bugInput' type='text' placeholder="What's your bug?"></input>
                 <button id='bugButton' type='submit' onClick={this.submitBug.bind(this)}>Submit Bug</button>
             </div>

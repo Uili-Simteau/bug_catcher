@@ -7,7 +7,7 @@ class Text extends Component {
 
         return (
             // <li>{this.props.text}</li>
-          <div>
+          <div className="debugging">
             <h1>Debugging</h1>
             <h2>strategies when stuff breaks :</h2>
               <ul>
