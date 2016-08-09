@@ -7,14 +7,13 @@ import Solution from './solution.js'
 class BugChecklist extends Component{
     constructor(props) {
         super(props)
-        console.log("bugs BugChecklist got from App", this.props.bugs)
+        console.log("solution got from App", this.props.solutionInput)
       }
 
     submitSolution(event) {
         var input = this.refs.solutionInput
         var value = input.value
         input.value = ''
-
         this.props.addSolution(value)
     }
 
@@ -23,19 +22,20 @@ class BugChecklist extends Component{
         const solutions = this.props.solutions
         return (
             <div>
-                <ul>
+                <form id="checklistUl">
                     { bugs.map( (singleBug, i) => {
                         return (
-                            <div>
-                                <Bug class="singleBug" bug={singleBug} index={ i } />
-                                {/* <Solution class="singleBug" solution={singleSolution} index={ i } /> */}
-                                <input id="solution" ref="solution" type="text" placeholder="No Solution?"></input>
-                                <button id="solutionButton" type="submit" onClick={this.submitSolution.bind(this)}>Submit solution</button>
+                            <div className="checklist" key={i}>
+                                    <label htmlFor="bugCount">Frequency: </label><input id="bugCount" type="number" rows="1" cols="1"/>
+                                    <Bug className="singleBug" bug={singleBug} index={ i } />
+                                    <label htmlFor="solutionInput">Solution: </label>
+                                    <textarea rows="4" cols="50" placeholder="Solution?">
+                                    </textarea>
+                                    <hr />
                             </div>
                         )
                     })}
-
-                </ul>
+                </form>
             </div>
         )
     }

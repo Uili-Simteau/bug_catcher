@@ -4,10 +4,13 @@ import reactDom from 'react-dom'
 
 class Bug extends Component {
 
+
 	render() {
 
 		return (
-			<li>{this.props.bug}</li>
+      <div>
+        <p>{this.props.bug}</p>
+      </div>
 		)
 	}
 }
