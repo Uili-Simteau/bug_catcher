@@ -3,10 +3,6 @@ import reactDom from 'react-dom'
 
 
 class Header extends Component {
-    constructor(props) {
-        super(props)
-
-    }
 
     render() {
       return(
