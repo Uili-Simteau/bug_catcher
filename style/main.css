@@ -45,7 +45,7 @@ body {
 
 
 
-.wrap {
+.wrap, #bugLog, .debugging {
   text-align: center;
   vertical-align: middle;
   margin-bottom: 100px;

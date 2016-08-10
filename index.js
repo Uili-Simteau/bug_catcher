@@ -57,10 +57,14 @@ class App extends Component {
             <div>
                 <Title name={this.props.name} saying={this.props.saying} />
                 <BugForm addBug={this.addBug.bind(this)} />
-                <h1>Bug Log</h1>
-                <BugChecklist bugs={this.state.bugs} solutions={this.state.solutions}/>
+                <div id="bugLog">
+                    <h1>Bug Log</h1>
+                    <BugChecklist bugs={this.state.bugs} solutions={this.state.solutions}/>
+                </div>
                 <Advice advice={this.props.advice} />
-                <div className="spinner spinner-5"><span></span><span></span><span></span></div>
+                <div className="spinnerDiv">
+                    <div className="spinner spinner-5"><span></span><span></span><span></span></div>
+                </div>
             </div>
         )
     }
