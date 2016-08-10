@@ -14,6 +14,7 @@ h1, h2, h3, p, #bugForm, .checklist{
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 li{
@@ -37,6 +38,7 @@ li{
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   padding: 100px;
   background: #eee;
 }
@@ -76,8 +78,8 @@ h1 {
   top: -4px;
   left: -4px;
   border: 4px solid transparent;
-  border-top-color: orangered;
-  border-bottom-color: orangered;
+  border-top-color: greenyellow;
+  border-bottom-color: greenyellow;
   -webkit-animation: spinny 1s linear infinite;
           animation: spinny 1s linear infinite;
 }
@@ -118,7 +120,7 @@ h1 {
 .spinner-2:before, .spinner-2:after {
   height: 20px;
   width: 20px;
-  background: orangered;
+  background: blue;
   position: absolute;
   top: -10px;
   left: 50%;
@@ -181,7 +183,7 @@ h1 {
 .spinner-3:after {
   width: 4px;
   height: 66px;
-  background: orangered;
+  background: red;
   border-radius: 0px;
   position: absolute;
   top: 50%;
@@ -199,7 +201,7 @@ h1 {
   left: 50%;
   margin-top: -50px;
   margin-left: -50px;
-  background: orangered;
+  background: yellow;
   -webkit-animation: pulse 3s linear infinite;
           animation: pulse 3s linear infinite;
   opacity: 0;
