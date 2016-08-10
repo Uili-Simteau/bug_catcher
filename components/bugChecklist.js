@@ -26,12 +26,12 @@ class BugChecklist extends Component{
                     { bugs.map( (singleBug, i) => {
                         return (
                             <div className="checklist" key={i}>
-                                    <label htmlFor="bugCount">Frequency: </label><input id="bugCount" type="number" rows="1" cols="1"/>
-                                    <Bug className="singleBug" bug={singleBug} index={ i } />
-                                    <label htmlFor="solutionInput">Solution: </label>
-                                    <textarea rows="4" cols="50" placeholder="Solution?">
-                                    </textarea>
-                                    <hr />
+                                <label htmlFor="bugCount">Frequency: </label><input id="bugCount" type="number" rows="1" cols="1"/>
+                                <Bug className="singleBug" bug={singleBug} index={ i } />
+                                <label htmlFor="solutionInput">Solution: </label>
+                                <textarea rows="4" cols="50" placeholder="Solution?">
+                                </textarea>
+                                <hr />
                             </div>
                         )
                     })}

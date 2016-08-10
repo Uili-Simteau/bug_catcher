@@ -43,6 +43,8 @@ body {
   background: #eee;
 }
 
+
+
 .wrap {
   text-align: center;
   vertical-align: middle;
@@ -63,7 +65,8 @@ h1 {
   border-radius: 50%;
   position: relative;
   margin: 50px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 .spinner:after, .spinner:before {
   content: "";
@@ -71,6 +74,11 @@ h1 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.spinnerDiv{
+  display: flex;
+  justify-content: center;
 }
 
 .spinner-1:after {

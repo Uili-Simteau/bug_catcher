@@ -22,12 +22,10 @@ class Title extends Component {
         return (
             <div>
                 <div className="wrap">
-                  <h1>Welcome to {this.props.name}</h1>
-                  <div className="spinner spinner-1"></div>
-                  <div className="spinner spinner-2"></div>
-                  <div className="spinner spinner-3"></div>
-                  <div className="spinner spinner-4"></div>
-                  <div className="spinner spinner-5"><span></span><span></span><span></span></div>
+                  <h1>{this.props.name}</h1>
+                  <div className="spinnerDiv">
+                      <div className="spinner spinner-1"></div>
+                  </div>
                   <h2>{this.props.saying}</h2>
                 </div>
             </div>
