@@ -10,15 +10,24 @@
 }
 
 
-h1, h2, h3, p, #bugForm, .checklist, #contact, .row u-full-width{
+h1, h2, h3, p, #bugForm, .checklist{
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
   font-family: 'Roboto', sans-serif;
 }
 
+#footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
 li{
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .debugging{

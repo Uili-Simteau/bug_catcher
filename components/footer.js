@@ -12,9 +12,9 @@ class Footer extends Component {
     render () {
         return (
             <div>
-              <div className="row u-full-width">
+              <div id="footer">
                 <div id="contact" className="bottomMenu">
-                  <div class="twelve columns">
+                  <div className="twelve columns">
                     <ul>
                       <li className="gitHub">
                         <a href="https://github.com/Uili-Simteau" target="_blank">
