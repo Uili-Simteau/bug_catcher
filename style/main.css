@@ -17,8 +17,17 @@ h1, h2, h3, p, #bugForm, .checklist{
   font-family: 'Roboto', sans-serif;
 }
 
+#footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
 li{
-    text-decoration-color: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .debugging{

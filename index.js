@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 
 import Title from './components/title.js'
 // import Header from './components/header.js'
-// import Footer from './components/footer.js'
+import Footer from './components/footer.js'
 import BugForm from './components/bugForm.js'
 import BugChecklist from './components/bugChecklist.js'
 import BugLog from './components/bugLog.js'
@@ -63,8 +63,9 @@ class App extends Component {
                 </div>
                 <Advice advice={this.props.advice} />
                 <div className="spinnerDiv">
-                    <div className="spinner spinner-5"><span></span><span></span><span></span></div>
+                    <div className="spinner spinner-3"></div>
                 </div>
+                <Footer />
             </div>
         )
     }
