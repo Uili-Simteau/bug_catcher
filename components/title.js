@@ -20,11 +20,14 @@ class Title extends Component {
 
     render () {
         return (
-            <div
-            onClick={this.toggleClickedState.bind(this)}
-            style={ this.state.clicked ? {'fontSize': '20pt'} : {'color': 'black', 'fontSize': '30px'} }>
-                <h1>Welcome to {this.props.name}</h1>
-                <h2>{this.props.saying}</h2>
+            <div>
+                <div className="wrap">
+                  <h1>{this.props.name}</h1>
+                  <div className="spinnerDiv">
+                      <div className="spinner spinner-1"></div>
+                  </div>
+                  <h2>{this.props.saying}</h2>
+                </div>
             </div>
         )
     }

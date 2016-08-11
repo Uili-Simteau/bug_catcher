@@ -7,6 +7,7 @@ import Title from './components/title.js'
 // import Footer from './components/footer.js'
 import BugForm from './components/bugForm.js'
 import BugChecklist from './components/bugChecklist.js'
+import BugLog from './components/bugLog.js'
 import Bug from './components/bug.js'
 import Solution from './components/solution.js'
 import Advice from './components/advice.js'
@@ -18,7 +19,7 @@ class App extends Component {
         this.addBug = this.addBug.bind(this)
         this.addSolution = this.addSolution.bind(this)
         this.state = {
-            bugs: [],
+            bugs: ["I am a bug"],
             solutions: []
         }
     }
@@ -56,8 +57,14 @@ class App extends Component {
             <div>
                 <Title name={this.props.name} saying={this.props.saying} />
                 <BugForm addBug={this.addBug.bind(this)} />
-                <BugChecklist bugs={this.state.bugs} solutions={this.state.solutions} />
+                <div id="bugLog">
+                    <h1>Bug Log</h1>
+                    <BugChecklist bugs={this.state.bugs} solutions={this.state.solutions}/>
+                </div>
                 <Advice advice={this.props.advice} />
+                <div className="spinnerDiv">
+                    <div className="spinner spinner-5"><span></span><span></span><span></span></div>
+                </div>
             </div>
         )
     }

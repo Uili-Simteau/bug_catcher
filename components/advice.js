@@ -12,6 +12,9 @@ class Advice extends Component{
     render () {
         return (
             <div>
+                <div className="spinnerDiv">
+                    <div className="spinner spinner-4"></div>
+                </div>
                 <Text className="adviceText" />
             </div>
         )
