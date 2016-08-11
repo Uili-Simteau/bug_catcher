@@ -4,7 +4,7 @@ import reactDom from 'react-dom'
 
 
 
-class Title extends Component {
+class Footer extends Component {
     constructor(props) {
         super(props)
     }
@@ -12,32 +12,32 @@ class Title extends Component {
     render () {
         return (
             <div>
-              <div class="row u-full-width">
-                <div id="contact" class="bottomMenu">
+              <div className="row u-full-width">
+                <div id="contact" className="bottomMenu">
                   <div class="twelve columns">
                     <ul>
-                      <li class="gitHub">
+                      <li className="gitHub">
                         <a href="https://github.com/Uili-Simteau" target="_blank">
                           <img src="images/Github_64.png" alt="" />
-                          <i class="fa fa-gitHub fa-lg"></i>
+                          <i className="fa fa-gitHub fa-lg"></i>
                         </a>
                       </li>
-                      <li class="linkedIn">
+                      <li className="linkedIn">
                         <a href="http://www.linkedin.com/in/uili-fecteau" target="_blank">
                           <img src="images/Linkedin_64.png"/>
-                          <i class="fa fa-linkedIn fa-lg"></i>
+                          <i className="fa fa-linkedIn fa-lg"></i>
                         </a>
                       </li>
-                      <li class="twitter">
+                      <li className="twitter">
                         <a href="https://twitter.com/Simteau" target="_blank">
                           <img src="images/Twitter_64.png"/>
-                          <i class="fa fa-twitter fa-lg"></i>
+                          <i className="fa fa-twitter fa-lg"></i>
                         </a>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <span class="copyright">All Content &copy; 2016</span>
+                <span className="copyright">All Content &copy; 2016</span>
               </div>
             </div>
         )
