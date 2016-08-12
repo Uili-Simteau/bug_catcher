@@ -54,6 +54,10 @@ body {
   background: #eee;
 }
 
+ul {
+  padding-left: 0;
+}
+
 
 
 .wrap, #bugLog, .debugging {
@@ -90,6 +94,7 @@ h1 {
 .spinnerDiv{
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .spinner-1:after {
