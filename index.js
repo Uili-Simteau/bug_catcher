@@ -52,6 +52,16 @@ class App extends Component {
         console.log('caught bugs!', this.state.solution)
     }
 
+    searchBug(event) {
+        // this is not figured out yet. submit search terms for searching the bugCHecklist
+        var input = this.refs.searchInput
+        var value = input.value
+        input.value = ''
+        this.props.addBug(value)
+        // <input type='text' ref='searchInput' name='search' placeholder="Search for bugs.."></input>
+        // <button id='serachButton' type='submit' onClick={this.searchBug.bind(this)}>Search Bug</button>
+    }
+
     render() {
         return (
             <div>
