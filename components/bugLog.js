@@ -13,7 +13,7 @@ class BugLog extends Component {
   render() {
     return(
       <div id="bugLog">
-        <h1>Bug Log</h1>
+        <h2>Bug Log</h2>
         <BugChecklist bugs={this.state.bugs} solutions={this.state.solutions}/>
       </div>
       )

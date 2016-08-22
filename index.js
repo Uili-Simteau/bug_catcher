@@ -68,7 +68,7 @@ class App extends Component {
                 <Title name={this.props.name} saying={this.props.saying} />
                 <BugForm addBug={this.addBug.bind(this)} />
                 <div id="bugLog">
-                    <h1>Bug Log</h1>
+                    <h2>Bug Log</h2>
                     <BugChecklist bugs={this.state.bugs} solutions={this.state.solutions}/>
                 </div>
                 <Advice advice={this.props.advice} />

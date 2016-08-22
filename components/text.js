@@ -8,8 +8,8 @@ class Text extends Component {
         return (
             // <li>{this.props.text}</li>
           <div className="debugging">
-            <h1>Debugging</h1>
-            <h2>Strategies for when stuff breaks :</h2>
+            <h2>Debugging</h2>
+            <h3>Strategies for when stuff breaks :</h3>
               <div>
                 <h3>Read the error</h3>
                 <p>Take a breath, read the error slowly.</p>
