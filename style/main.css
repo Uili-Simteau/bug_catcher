@@ -10,7 +10,7 @@
 }
 
 
-h1, h2, h3, p, #bugForm, .checklist{
+h1, h2, h3, p, #bugForm, .checklist, .copyright{
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
@@ -66,6 +66,11 @@ body {
   height: 100vh;
 }
 
+ul {
+  padding-left: 0;
+}
+
+
 .wrap, #bugLog, .debugging {
   text-align: center;
   background-color: white;
@@ -102,6 +107,7 @@ h1 {
 .spinnerDiv{
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .spinner-1:after {
