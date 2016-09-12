@@ -3,7 +3,6 @@ import reactDom from 'react-dom'
 import React, { Component } from 'react'
 
 import Title from './components/title.js'
-// import Header from './components/header.js'
 import Footer from './components/footer.js'
 import BugForm from './components/bugForm.js'
 import BugChecklist from './components/bugChecklist.js'

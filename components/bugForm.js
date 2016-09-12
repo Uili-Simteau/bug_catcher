@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import reactDom from 'react-dom'
 import Bug from './bug.js'
+import { Button, Col, Form, FormGroup } from 'react-bootstrap'
 
 
 class BugForm extends Component {
@@ -20,10 +21,35 @@ class BugForm extends Component {
 
     render () {
         return (
-            <div id='bugForm'>
+            <Form horzontal id='bugForm'>
+                <FormGroup controleId="formHorizontalBug">
+                    <Col ComponentClass={ControlLabel} sm={2}>
+                        Your Bug?
+                    </Col>
+                    <Col sm={10}>
+                        <FormControl type="text" id='bugInput' ref='bugInput' placeholder="What is your bug?" />
+                    </Col>
+                </FormGroup>
+
+                <FormGroup controleId="formHorizontalSolution">
+                    <Col ComponentClass={ControlLabel} sm={2}>
+                        Solution?
+                    </Col>
+                    <Col sm={10}>
+                        <ForControl type="text" placeholder="Solution?" />
+                    </Col>
+                </FormGroup>
+
+                <FormGroup>
+                    <Col smOffset={2} sm={10}>
+                        <Button id='bugButton' type='submit' onClick={this.submitBug.bind(this)}>
+                            Submit Bug
+                        </Button>
+                    </Col>
+                </FormGroup>
                 <input id='bugInput' ref='bugInput' type='text' placeholder="What's your bug?"></input>
-                <button id='bugButton' type='submit' onClick={this.submitBug.bind(this)}>Submit Bug</button>
-            </div>
+
+            </Form>
         )
     }
 }
